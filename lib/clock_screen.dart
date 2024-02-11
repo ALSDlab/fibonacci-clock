@@ -30,7 +30,7 @@ class ClockScreen extends StatelessWidget {
                     final radian = pi / 2 - pi * (0.5 / 180) * minutes;
                     return Transform.rotate(
                         angle: radian, //
-                        child: const FibonaccoSpiral());
+                        child: const FibonacciSpiral());
                   }),
                 ],
               ),

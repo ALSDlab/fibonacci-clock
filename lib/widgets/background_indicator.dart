@@ -19,118 +19,102 @@ class BackgroundIndicator extends StatelessWidget {
           clipper: CustomRectClipper1(),
           child: Transform.rotate(
               angle: 30 * (pi / 180), // 30도를 라디안으로 변환 2시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper1(),
           child: Transform.rotate(
               angle: 60 * (pi / 180), // 60도를 라디안으로 변환 1시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 90 * (pi / 180), // 90도를 라디안으로 변환 0시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 120 * (pi / 180), // 120도를 라디안으로 변환 11시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 150 * (pi / 180), // 150도를 라디안으로 변환 10시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 180 * (pi / 180), // 180도를 라디안으로 변환 9시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 210 * (pi / 180), // 210도를 라디안으로 변환 8시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper2(),
           child: Transform.rotate(
               angle: 240 * (pi / 180), // 240도를 라디안으로 변환 7시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper1(),
           child: Transform.rotate(
               angle: 270 * (pi / 180), // 270도를 라디안으로 변환 6시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper1(),
           child: Transform.rotate(
               angle: 300 * (pi / 180), // 300도를 라디안으로 변환 5시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper1(),
           child: Transform.rotate(
               angle: 330 * (pi / 180), // 330도를 라디안으로 변환 4시
-              child: const FibonaccoSpiral()),
+              child: const FibonacciSpiral()),
         ),
         ClipPath(
           clipper: CustomRectClipper1(),
-          child: const FibonaccoSpiral(),  // 3시
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              width: 100,
-              height: double.infinity,
-              color: Colors.white,
-            ),
-            Container(
-              width: 100,
-              height: double.infinity,
-              color: Colors.white,
-            )
-          ],
+          child: const FibonacciSpiral(),  // 3시
         ),
 
-        Padding(
-          padding: EdgeInsets.only(top:  heightSize * 0.11, left: widthSize * 0.17),
-          child: const Column(
-            children: [
-              Text('6', style: TextStyle(color: Colors.pink, fontSize: 20)),
-              Text('5', style: TextStyle(color: Colors.pink, fontSize: 19)),
-              Text('4', style: TextStyle(color: Colors.pink, fontSize: 18)),
-              Text('3', style: TextStyle(color: Colors.pink, fontSize: 17)),
-              Text('2', style: TextStyle(color: Colors.pink, fontSize: 16)),
-              Text('1', style: TextStyle(color: Colors.pink, fontSize: 16)),
-            ],
+        Center(
+          child: Padding(
+            padding: EdgeInsets.only(left: widthSize * 0.17),
+            child: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('6', style: TextStyle(color: Colors.pink, fontSize: 20)),
+                Text('5', style: TextStyle(color: Colors.pink, fontSize: 19)),
+                Text('4', style: TextStyle(color: Colors.pink, fontSize: 18)),
+                Text('3', style: TextStyle(color: Colors.pink, fontSize: 17)),
+                Text('2', style: TextStyle(color: Colors.pink, fontSize: 16)),
+                Text('1', style: TextStyle(color: Colors.pink, fontSize: 16)),
+                SizedBox(height: 330,)
+              ],
+            ),
           ),
         ),
          Padding(
-          padding: EdgeInsets.only(top: heightSize * 0.54, right: widthSize * 0.2),
-          child: const Flex(
-            direction: Axis.vertical,
+          padding: EdgeInsets.only(right: widthSize * 0.2),
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('7', style: TextStyle(color: Colors.pink, fontSize: 16)),
-                    Text('8', style: TextStyle(color: Colors.pink, fontSize: 16)),
-                    Text('9', style: TextStyle(color: Colors.pink, fontSize: 17)),
-                    Text('10', style: TextStyle(color: Colors.pink, fontSize: 18)),
-                    Text('11', style: TextStyle(color: Colors.pink, fontSize: 19)),
-                    Text('12', style: TextStyle(color: Colors.pink, fontSize: 20)),
-                  ],
-                ),
-              ),
+              SizedBox(height: 330,),
+              Text('7', style: TextStyle(color: Colors.pink, fontSize: 16)),
+              Text('8', style: TextStyle(color: Colors.pink, fontSize: 16)),
+              Text('9', style: TextStyle(color: Colors.pink, fontSize: 17)),
+              Text('10', style: TextStyle(color: Colors.pink, fontSize: 18)),
+              Text('11', style: TextStyle(color: Colors.pink, fontSize: 19)),
+              Text('12', style: TextStyle(color: Colors.pink, fontSize: 20)),
             ],
           ),
         ),

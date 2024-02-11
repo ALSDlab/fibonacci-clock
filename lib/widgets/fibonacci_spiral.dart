@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class FibonaccoSpiral extends StatelessWidget {
-  const FibonaccoSpiral({super.key});
+class FibonacciSpiral extends StatelessWidget {
+  const FibonacciSpiral({super.key});
 
   @override
   Widget build(BuildContext context) {
